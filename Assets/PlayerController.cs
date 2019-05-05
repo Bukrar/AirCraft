@@ -4,43 +4,39 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
+    [Header("GG")]
     [Tooltip("In ms^-1")] [SerializeField] float Speed = 4f;
     [Tooltip("In xRange")] [SerializeField] float xRange = 5f;
     [Tooltip("In yRange")] [SerializeField] float yRange = 2f;
 
+    [Header("Base")]
     [SerializeField] float positionPitchFactor = -5f;
     [SerializeField] float contrlPitchFactor = -20f;
 
     [SerializeField] float positionRawFactor = 5f;
     [SerializeField] float contrlRollFactor = -20f;
-    
+
     //[SerializeField] float positionRollFactor = -5f;
     //[SerializeField] float contrlRollFactor = -5f;
 
     float xThrow, yThrow;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    bool PlayerIsDeath;
 
     // Update is called once per frame
     void Update()
     {
-        Move();
-        Rotation();
+        if (PlayerIsDeath == false)
+        {
+            Move();
+            Rotation();
+        }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnPlayerDeath()
     {
-        print("OnCollisionEnter");
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        print("OnTriggerEnter");
+        PlayerIsDeath = true;
     }
 
     private void Rotation()
