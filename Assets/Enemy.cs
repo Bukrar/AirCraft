@@ -6,10 +6,18 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject deadFx;
     [SerializeField] Transform save;
+    [SerializeField] int socreNumber;
+    ScoreBoard scoreBoard;
+
     void Start()
     {
-        Collider boxCollider = gameObject.AddComponent<BoxCollider>();
+        AddBoxCollider();
+        scoreBoard = FindObjectOfType<ScoreBoard>();
+    }
 
+    private void AddBoxCollider()
+    {
+        Collider boxCollider = gameObject.AddComponent<BoxCollider>();
     }
 
     // Update is called once per frame
@@ -20,8 +28,10 @@ public class Enemy : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
+        scoreBoard.ScoreHit(socreNumber);
         GameObject fx = Instantiate(deadFx, transform.position, Quaternion.identity);
         fx.transform.parent = save;
-        Destroy(gameObject);
+        Destroy(gameObject);      
+
     }
 }
