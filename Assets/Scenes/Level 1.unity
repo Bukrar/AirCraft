@@ -140,6 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deadFx: {fileID: 6749860658533497378, guid: 08daf9fcd4870a64fa655bbff27c44ca, type: 3}
   save: {fileID: 1753969394}
+  socreNumber: 1000
 --- !u!1 &20833022
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,6 +267,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef002c2a9ac8b2a4e8e4f29d415eee38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &177857848 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5736204340947599151, guid: 22f2cadf1bce556489b58b2aad93da5f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5287453636394787712}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &321454315 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4990607877152018, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
@@ -932,6 +939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deadFx: {fileID: 6749860658533497378, guid: 08daf9fcd4870a64fa655bbff27c44ca, type: 3}
   save: {fileID: 1753969394}
+  socreNumber: 10
 --- !u!1001 &1365465072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -994,6 +1002,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4990607877152018, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
     type: 3}
   m_PrefabInstance: {fileID: 1898619605}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1609379892 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1599734256838112352, guid: 22f2cadf1bce556489b58b2aad93da5f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5287453636394787712}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1725303355
 GameObject:
@@ -1223,6 +1237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deadFx: {fileID: 6749860658533497378, guid: 08daf9fcd4870a64fa655bbff27c44ca, type: 3}
   save: {fileID: 1753969394}
+  socreNumber: 100
 --- !u!1 &1951901521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,6 +1351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deadFx: {fileID: 6749860658533497378, guid: 08daf9fcd4870a64fa655bbff27c44ca, type: 3}
   save: {fileID: 1753969394}
+  socreNumber: 1
 --- !u!1 &2115981802
 GameObject:
   m_ObjectHideFlags: 0
@@ -1600,6 +1616,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1599734256838112352, guid: 22f2cadf1bce556489b58b2aad93da5f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156631240796162551, guid: 22f2cadf1bce556489b58b2aad93da5f,
+        type: 3}
+      propertyPath: guns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2156631240796162551, guid: 22f2cadf1bce556489b58b2aad93da5f,
+        type: 3}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 1609379892}
+    - target: {fileID: 2156631240796162551, guid: 22f2cadf1bce556489b58b2aad93da5f,
+        type: 3}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 177857848}
+    - target: {fileID: 5736204340947599151, guid: 22f2cadf1bce556489b58b2aad93da5f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22f2cadf1bce556489b58b2aad93da5f, type: 3}
