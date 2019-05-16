@@ -141,6 +141,7 @@ MonoBehaviour:
   deadFx: {fileID: 6749860658533497378, guid: 08daf9fcd4870a64fa655bbff27c44ca, type: 3}
   save: {fileID: 1753969394}
   socreNumber: 1000
+  health: 20
 --- !u!1 &20833022
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,6 +941,7 @@ MonoBehaviour:
   deadFx: {fileID: 6749860658533497378, guid: 08daf9fcd4870a64fa655bbff27c44ca, type: 3}
   save: {fileID: 1753969394}
   socreNumber: 10
+  health: 20
 --- !u!1001 &1365465072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1238,6 +1240,7 @@ MonoBehaviour:
   deadFx: {fileID: 6749860658533497378, guid: 08daf9fcd4870a64fa655bbff27c44ca, type: 3}
   save: {fileID: 1753969394}
   socreNumber: 100
+  health: 20
 --- !u!1 &1951901521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1352,6 +1355,7 @@ MonoBehaviour:
   deadFx: {fileID: 6749860658533497378, guid: 08daf9fcd4870a64fa655bbff27c44ca, type: 3}
   save: {fileID: 1753969394}
   socreNumber: 1
+  health: 20
 --- !u!1 &2115981802
 GameObject:
   m_ObjectHideFlags: 0
@@ -1562,6 +1566,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerShip
       objectReference: {fileID: 0}
+    - target: {fileID: 5736204340947599151, guid: 22f2cadf1bce556489b58b2aad93da5f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1599734256838112352, guid: 22f2cadf1bce556489b58b2aad93da5f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5474806573299816823, guid: 22f2cadf1bce556489b58b2aad93da5f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1617,11 +1631,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.04
       objectReference: {fileID: 0}
-    - target: {fileID: 1599734256838112352, guid: 22f2cadf1bce556489b58b2aad93da5f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2156631240796162551, guid: 22f2cadf1bce556489b58b2aad93da5f,
         type: 3}
       propertyPath: guns.Array.size
@@ -1637,11 +1646,6 @@ PrefabInstance:
       propertyPath: guns.Array.data[1]
       value: 
       objectReference: {fileID: 177857848}
-    - target: {fileID: 5736204340947599151, guid: 22f2cadf1bce556489b58b2aad93da5f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22f2cadf1bce556489b58b2aad93da5f, type: 3}
 --- !u!4 &6757948412114951302 stripped

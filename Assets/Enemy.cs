@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject deadFx;
     [SerializeField] Transform save;
     [SerializeField] int socreNumber;
+    [SerializeField] int health = 3;
     ScoreBoard scoreBoard;
 
     void Start()
@@ -29,9 +30,17 @@ public class Enemy : MonoBehaviour
     private void OnParticleCollision(GameObject other)
     {
         scoreBoard.ScoreHit(socreNumber);
+        health = health - 1;
+        if (health <= 0)
+        {
+            KillEnemy();
+        }
+    }
+
+    private void KillEnemy()
+    {
         GameObject fx = Instantiate(deadFx, transform.position, Quaternion.identity);
         fx.transform.parent = save;
-        Destroy(gameObject);      
-
+        Destroy(gameObject);
     }
 }
